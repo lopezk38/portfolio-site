@@ -14,30 +14,28 @@ function Blog() {
 	
 	return (
 		<main className="section">
-			<section className="section glass-pane">
-				<h1>Kenneth's Blog</h1>
-				<p>
-					Welcome to my blog! I'll post more about my projects here.
-				</p>
-			</section>
+			<div className='v-container'>
+				<section className="section glass-pane">
+					<h1>Kenneth's Blog</h1>
+					<p>
+						Welcome to my blog! I'll post more about my projects here.
+					</p>
+				</section>
 
-			<section>
 				{blogEntries.map((entry) => (
-					<div key={Math.random()}>
-						<article className="blog-post glass-pane">
-							<h2>{entry.name}</h2>
-							<h3>{entry.heading}</h3>
-							{entry.content.map((subContent, index) => (
-								<section key={Math.random()} className="blog-subcontent glass-pane">
-									<h3>{subContent.subContentHeading}</h3>
-									<img src={subContent.subContentImg}></img>
-									<p>{subContent.subContentText}</p>
-								</section>
-							))}
-						</article>
-					</div>
+					<article key={Math.random()} className="blog-post glass-pane">
+						<h2>{entry.name}</h2>
+						<h3>{entry.heading}</h3>
+						{entry.content.map((subContent, index) => (
+							<section key={Math.random()} className="blog-subcontent glass-pane">
+								<h3>{subContent.subContentHeading}</h3>
+								<img src={subContent.subContentImg}></img>
+								<p>{subContent.subContentText}</p>
+							</section>
+						))}
+					</article>
 				))}
-			</section>
+			</div>
 			
 			{/*Background animation generated using https://wweb.dev/resources/animated-css-background-generator */}
 			<ul class="background">
