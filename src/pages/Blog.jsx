@@ -13,7 +13,7 @@ function Blog() {
 	const [blogEntries, setBlogEntries] = useState(blogData.entries);
 	
 	return (
-		<main className="section">
+		<main>
 			<div className='v-container'>
 				<section className="section glass-pane">
 					<h1>Kenneth's Blog</h1>
