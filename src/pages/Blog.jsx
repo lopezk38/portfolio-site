@@ -23,7 +23,7 @@ function Blog() {
 				</section>
 
 				{blogEntries.map((entry) => (
-					<article key={Math.random()} className="blog-post glass-pane">
+					<article key={Math.random()} className="section blog-post glass-pane">
 						<h2>{entry.name}</h2>
 						<h3>{entry.heading}</h3>
 						{entry.content.map((subContent, index) => (
