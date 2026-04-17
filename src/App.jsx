@@ -1,4 +1,5 @@
 import { Routes, Route, Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import Home from './pages/Home';
 import Blog from './pages/Blog';
 
@@ -8,9 +9,9 @@ function App() {
 			<nav className="navbar">
 				<Link to="/" className="nav-logo">Kenneth Lopez's Portfolio</Link>
 				<div className="nav-links">
-					<a href="#about">About</a>
-					<a href="#projects">Projects</a>
-					<a href="#contact">Contact</a>
+					<HashLink to="/#about">About</HashLink>
+					<HashLink to="/#projects">Projects</HashLink>
+					<HashLink to="/#contact">Contact</HashLink>
 					<Link to="/blog">Blog</Link>
 				</div>
 			</nav>

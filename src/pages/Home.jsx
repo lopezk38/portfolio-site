@@ -9,6 +9,10 @@ function Home() {
 		}
 	}
 	
+	const sendEmail = (address) => {
+		window.location.href = `mailto:${address}`;
+	}
+	
 	const projectCardEntries = [
 		{
 			clickHandler: openPage,
@@ -81,7 +85,7 @@ function Home() {
 				{/* Contact Section */}
 				<section id="contact" className="section glass-pane">
 					<h2>Contact Me!</h2>
-					<p>Email: lopezk38@gmail.com</p>
+					<p onClick={() => {sendEmail('lopezk38@gmail.com')}}>Email: lopezk38@gmail.com</p>
 					<p onClick={() => {openPage('https://github.com/lopezk38')}}>
 						GitHub: github.com/lopezk38
 					</p>
