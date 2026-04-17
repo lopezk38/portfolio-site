@@ -38,7 +38,7 @@ function Blog() {
 			</div>
 			
 			{/*Background animation generated using https://wweb.dev/resources/animated-css-background-generator */}
-			<ul class="background">
+			<ul className="background">
 			   <li></li>
 			   <li></li>
 			   <li></li>
