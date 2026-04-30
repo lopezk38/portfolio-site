@@ -87,13 +87,13 @@ function Home() {
 					<h2>Contact Me!</h2>
 					<div className="contact-container">
 						<div className="contact-card project-card mini opaque-background">
-							<img src="mail.svg"></img>
+							<img src="/portfolio-site/mail.svg"></img>
 							<p className="section" onClick={() => {sendEmail('lopezk38@gmail.com')}}>
 								Email: lopezk38@gmail.com
 							</p>
 						</div>
 						<div className="contact-card project-card mini opaque-background">
-							<img src="github.svg"></img>
+							<img src="/portfolio-site/github.svg"></img>
 							<p className="section" onClick={() => {openPage('https://github.com/lopezk38')}}>
 								GitHub: github.com/lopezk38
 							</p>
