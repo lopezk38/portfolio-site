@@ -12,7 +12,7 @@ function App() {
 					<HashLink to="/#about">About</HashLink>
 					<HashLink to="/#projects">Projects</HashLink>
 					<HashLink to="/#contact">Contact</HashLink>
-					<Link to="/blog">Blog</Link>
+					<HashLink to="/blog/#blog">Blog</HashLink>
 				</div>
 			</nav>
 

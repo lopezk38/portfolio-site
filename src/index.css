@@ -87,16 +87,48 @@ body {
 	border: 1px solid #BBB;
 	border-radius: 8px;
 	padding: 1.5rem;
-	transition: box-shadow 0.2s;
+	transition: box-shadow 0.2s, transform 0.2s ease-in-out;
 }
 
 .project-card:hover {
+	transform: scale(1.05);
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .project-card h3 {
 	color: #0f3460;
 	margin-bottom: 0.5rem;
+}
+
+.project-card.mini {
+	margin: 0.5rem;
+	padding: 0.5rem;
+	width: auto;
+	height: fit-content;
+	transition: box-shadow 0.2s, transform 0.2s ease-in-out;
+}
+
+.contact-container {
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+	height: fit-content;
+}
+
+.contact-card {
+	display: flex;
+	align-items: start;
+	gap: 1rem;
+}
+
+.contact-card img {
+	height: 1.5rem;
+	margin: auto;
+}
+
+.contact-card p {
+	margin: auto;
+	padding: 0.25rem;
 }
 
 .glass-pane {
@@ -108,6 +140,15 @@ body {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   
   margin: 1rem;
+}
+
+.opaque-background {
+	background: rgba(255, 255, 255, 1) !important; 
+}
+
+.glass-pane.mini:hover {
+	transform: scale(1.05);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .blog-post {

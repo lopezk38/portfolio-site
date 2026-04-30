@@ -50,9 +50,9 @@ function Home() {
 				<p>Aspiring Software Engineer and Maker</p>
 			</section>
 			
-			<div className='v-container'>
+			<div id="about" className='v-container'>
 				{/* About Section */}
-				<section id="about" className="section glass-pane">
+				<section className="section glass-pane">
 					<h2>About Me</h2>
 					<p>
 						I am a senior year student studying Computer Science at CSU San Marcos.
@@ -70,7 +70,7 @@ function Home() {
 						{projectCards.map((data) => (
 							<div
 								key={Math.random()}
-								className="project-card"
+								className="project-card opaque-background"
 								onClick={() => {data.clickHandler(data.url)}}
 								url={data.url}
 								title={data.title}
@@ -85,10 +85,20 @@ function Home() {
 				{/* Contact Section */}
 				<section id="contact" className="section glass-pane">
 					<h2>Contact Me!</h2>
-					<p onClick={() => {sendEmail('lopezk38@gmail.com')}}>Email: lopezk38@gmail.com</p>
-					<p onClick={() => {openPage('https://github.com/lopezk38')}}>
-						GitHub: github.com/lopezk38
-					</p>
+					<div className="contact-container">
+						<div className="contact-card project-card mini opaque-background">
+							<img src="mail.svg"></img>
+							<p className="section" onClick={() => {sendEmail('lopezk38@gmail.com')}}>
+								Email: lopezk38@gmail.com
+							</p>
+						</div>
+						<div className="contact-card project-card mini opaque-background">
+							<img src="github.svg"></img>
+							<p className="section" onClick={() => {openPage('https://github.com/lopezk38')}}>
+								GitHub: github.com/lopezk38
+							</p>
+						</div>
+					</div>
 				</section>
 			</div>
 			
