@@ -27,7 +27,7 @@ function Blog() {
 						<h2>{entry.name}</h2>
 						<h3>{entry.heading}</h3>
 						{entry.content.map((subContent, index) => (
-							<section key={Math.random()} className="blog-subcontent glass-pane">
+							<section key={Math.random()} className="blog-subcontent glass-pane opaque-background">
 								<h3>{subContent.subContentHeading}</h3>
 								<img src={subContent.subContentImg}></img>
 								<p>{subContent.subContentText}</p>
