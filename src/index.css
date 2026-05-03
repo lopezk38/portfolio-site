@@ -106,10 +106,13 @@ body {
 	margin-top: 1rem;
 }
 
-.project-card {
+.base-card {
 	border: 1px solid #BBB;
 	border-radius: 8px;
 	padding: 1.5rem;
+}
+
+.project-card {
 	transition: box-shadow 0.2s, transform 0.2s ease-in-out;
 }
 

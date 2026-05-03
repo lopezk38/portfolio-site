@@ -35,7 +35,7 @@ function Home() {
 		},
 		{
 			clickHandler: openPage,
-			url: '',
+			url: 'https://github.com/lopezk38/smart-fuse-box',
 			title: "Automotive Power Distribution Center",
 			desc: "Fully integrated power distribution module for my LS swapped Camaro. Water resistant enclosure designed using SolidEdge and 3D scans of the engine compartment using RealityScan. Custom designed heavy copper four layer PCB transmits up to 50 amps on a single circuit. Features smart shutdown of the A/C compressor circuit when the engine is above 4,500 RPM to protect the compressor, automatic high speed radiator fan activaton upon A/C request, and three 150 amp high power circuits. PCB designed using KiCad"
 		}
@@ -75,7 +75,7 @@ function Home() {
 				{/* About Section */}
 				<section className="section glass-pane">
 					<h2>About Me</h2>
-					<p>
+					<p className="base-card mini opaque-background">
 						I am a senior year student studying Computer Science at CSU San Marcos.
 						I love architecting and developing complex software systems 
 						which help make people's lives easier. I also enjoy
@@ -91,7 +91,7 @@ function Home() {
 						{projectCards.map((data) => (
 							<div
 								key={Math.random()}
-								className="project-card opaque-background"
+								className="base-card project-card opaque-background"
 								onClick={() => {data.clickHandler(data.url)}}
 								url={data.url}
 								title={data.title}
@@ -107,13 +107,13 @@ function Home() {
 				<section id="contact" className="section glass-pane">
 					<h2>Contact Me!</h2>
 					<div className="contact-container">
-						<div className="contact-card project-card mini opaque-background">
+						<div className="base-card contact-card project-card mini opaque-background">
 							<img src="/portfolio-site/mail.svg"></img>
 							<p className="section" onClick={() => {sendEmail('lopezk38@gmail.com')}}>
 								Email: lopezk38@gmail.com
 							</p>
 						</div>
-						<div className="contact-card project-card mini opaque-background">
+						<div className="base-card contact-card project-card mini opaque-background">
 							<img src="/portfolio-site/github.svg"></img>
 							<p className="section" onClick={() => {openPage('https://github.com/lopezk38')}}>
 								GitHub: github.com/lopezk38
