@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PrismaticBurst from '@/components/PrismaticBurst'
 
 function Home() {
 	
@@ -45,10 +46,30 @@ function Home() {
 	return (
 		<main>		
 			{/* Hero Section */}
-			<section className="hero">
-				<h1>Hi, I'm Kenneth Lopez</h1>
-				<p>Aspiring Software Engineer and Maker</p>
-			</section>
+			<div className="hero-container">
+				<div className="hero-background">
+					<PrismaticBurst
+						animationType="rotate3d"
+						intensity={1}
+						speed={0.5}
+						distort={7.9}
+						paused={false}
+						offset={{ x: 0, y: 0 }}
+						hoverDampness={0.25}
+						rayCount={0}
+						mixBlendMode="lighten"
+						colors={['#ff007a', '#4d3dff', '#ffffff']}
+						color0="#5557f7"
+						color1="#3a76ed"
+						color2="#637df1"
+					/>
+				</div>
+
+				<section className="hero">
+					<h1>Hi, I'm Kenneth Lopez</h1>
+					<p>Aspiring Software Engineer and Maker</p>
+				</section>
+			</div>
 			
 			<div id="about" className='v-container'>
 				{/* About Section */}
